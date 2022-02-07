@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "thorlabs-ell9k-ctrl"
+version = "0.1.0"
+description = "Server for controlling the Thorlabs ELL9K filter slider"
+authors = ["Michael Marti <micmarti@ethz.ch>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6,<3.10"
+tiqi-rpc = {path = "deps/tiqi-rpc-python", develop = true}
+tiqi-plugin = {path = "deps/tiqi-plugin", develop = true}
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.4"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,13 @@
+[Unit]
+Description=Web API server communicating with Thorlabs ELL9K filter slider
+After=network.target
+
+[Service]
+User=tiqi
+WorkingDirectory=/home/tiqi/thorlabs-ell9k-ctrl
+ExecStart=/home/tiqi/thorlabs-ell9k-ctrl/.venv/bin/python3 -m optosigma_ctrl.server.app
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target 
