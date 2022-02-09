@@ -5,7 +5,10 @@ description = "Server for controlling the Thorlabs ELL9K filter slider"
 authors = ["Michael Marti <micmarti@ethz.ch>"]
 
 [tool.poetry.dependencies]
-python = ">=3.6,<3.10"
+python = ">=3.7,<3.10"
+websockets = ">9.0"
+pyserial = ">1.0"
+numpy = ">1.0"
 tiqi-rpc = {path = "deps/tiqi-rpc-python", develop = true}
 tiqi-plugin = {path = "deps/tiqi-plugin", develop = true}
 
