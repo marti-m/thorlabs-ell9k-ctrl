@@ -129,7 +129,7 @@ class ELL9K:
         pos = pos_idx * 32
         self._transmit_bytes(addr='0', instr=cmd['move_abs'], data=pos)
         self._get_status()
-    
+
     @trigger_update('position')
     @trigger_update('filter_str')
     @trigger_update('status')
@@ -139,7 +139,7 @@ class ELL9K:
         self._move_to_pos_abs(pos)
         self._current_pos_idx = pos
         self._current_filter = self._filter_list[self._current_pos_idx]
-    
+
     @trigger_update('position')
     @trigger_update('filter_str')
     @trigger_update('status')
@@ -149,7 +149,7 @@ class ELL9K:
         self._move_to_pos_abs(pos)
         self._current_pos_idx = pos
         self._current_filter = self._filter_list[self._current_pos_idx]
-    
+
     @trigger_update('position')
     @trigger_update('filter_str')
     @trigger_update('status')
@@ -159,7 +159,7 @@ class ELL9K:
         self._move_to_pos_abs(pos)
         self._current_pos_idx = pos
         self._current_filter = self._filter_list[self._current_pos_idx]
-    
+
     @trigger_update('position')
     @trigger_update('filter_str')
     @trigger_update('status')

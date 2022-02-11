@@ -325,13 +325,15 @@ dev = ["pylint", "autopep8", "pytest", "pytest-cov"]
 docs = ["mkdocs", "mkdocs-material", "mkdocs-include-markdown-plugin", "mkdocs-gen-files", "mkdocstrings"]
 
 [package.source]
-type = "directory"
-url = "deps/tiqi-plugin"
+type = "git"
+url = "git@gitlab.phys.ethz.ch:tiqi-projects/tiqi-plugin.git"
+reference = "master"
+resolved_reference = "9d02932976b4f751e9b8f25d3da27a27c3f21162"
 
 [[package]]
 name = "tiqi-rpc"
 version = "1.0.4"
-description = "TIQI group server/client implementations of the framed msgpack-rpc-based protocol"
+description = ""
 category = "main"
 optional = false
 python-versions = ">=3.6"
@@ -344,8 +346,10 @@ msgpack = "*"
 dev = ["pylint", "autopep8", "pytest", "pytest-cov"]
 
 [package.source]
-type = "directory"
-url = "deps/tiqi-rpc-python"
+type = "git"
+url = "git@gitlab.phys.ethz.ch:tiqi-projects/tiqi-rpc-python.git"
+reference = "master"
+resolved_reference = "1130f8c1cb93874adf14932d3a409a14dd974489"
 
 [[package]]
 name = "toml"
@@ -416,7 +420,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7,<3.10"
-content-hash = "f42072a2b876b5b2656b185b86ab1bdd338381ab62f4fd55b6c40e8e095bc656"
+content-hash = "71b78d43dd491a5dc030665c6dbf6a7ccc8c98a4a4f1b1c00ec57aafe8a850af"
 
 [metadata.files]
 aiofiles = [

@@ -9,8 +9,8 @@ python = ">=3.7,<3.10"
 websockets = ">9.0"
 pyserial = ">1.0"
 numpy = ">1.0"
-tiqi-rpc = {path = "deps/tiqi-rpc-python", develop = true}
-tiqi-plugin = {path = "deps/tiqi-plugin", develop = true}
+tiqi-rpc = {git = "git@gitlab.phys.ethz.ch:tiqi-projects/tiqi-rpc-python.git", develop = true}
+tiqi-plugin = {git = "git@gitlab.phys.ethz.ch:tiqi-projects/tiqi-plugin.git", develop = true}
 
 [tool.poetry.dev-dependencies]
 autopep8 = "^1.5.4"
